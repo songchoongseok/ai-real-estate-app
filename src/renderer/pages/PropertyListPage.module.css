@@ -1,0 +1,245 @@
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.addButton {
+  padding: 10px 20px;
+  background: #3182ce;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.addButton:hover {
+  background: #2c5282;
+}
+
+.filterBar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.filterSelect {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #2d3748;
+  cursor: pointer;
+  min-width: 140px;
+  transition: border-color 0.2s ease;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.tableCard {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead {
+  background: #f7fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #718096;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #edf2f7;
+  color: #2d3748;
+}
+
+.tableRow {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.tableRow:hover {
+  background: #edf2f7;
+}
+
+.tableRow:nth-child(even) {
+  background: #fafbfc;
+}
+
+.tableRow:nth-child(even):hover {
+  background: #edf2f7;
+}
+
+.idCell {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  color: #718096;
+  white-space: nowrap;
+}
+
+.addressCell {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.priceCell {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dateCell {
+  white-space: nowrap;
+  color: #718096;
+  font-size: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.actionCell {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.actionBtn {
+  padding: 5px 12px;
+  border: 1px solid #3182ce;
+  background: transparent;
+  color: #3182ce;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionBtn:hover {
+  background: #3182ce;
+  color: #ffffff;
+}
+
+.actionBtnSecondary {
+  padding: 5px 12px;
+  border: 1px solid #a0aec0;
+  background: transparent;
+  color: #718096;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionBtnSecondary:hover {
+  background: #a0aec0;
+  color: #ffffff;
+}
+
+.actionBtnDanger {
+  padding: 5px 12px;
+  border: 1px solid #e53e3e;
+  background: transparent;
+  color: #e53e3e;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionBtnDanger:hover {
+  background: #e53e3e;
+  color: #ffffff;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.emptyText {
+  font-size: 15px;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 12px 0;
+  text-align: right;
+  font-size: 13px;
+  color: #718096;
+}

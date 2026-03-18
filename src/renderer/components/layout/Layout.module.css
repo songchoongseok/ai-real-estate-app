@@ -1,0 +1,98 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.appTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 240px;
+  background: #1a2332;
+  flex-shrink: 0;
+  overflow-y: auto;
+  padding-top: 8px;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.navLink:hover {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+.navLinkActive {
+  background: #2d3748;
+  color: #ffffff;
+  border-left-color: #3182ce;
+}
+
+.navIcon {
+  font-size: 16px;
+  line-height: 1;
+  width: 20px;
+  text-align: center;
+}
+
+.navLabel {
+  line-height: 1;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  background: #f7fafc;
+  padding: 24px;
+}
