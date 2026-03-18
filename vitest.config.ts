@@ -6,13 +6,13 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src/renderer'),
+      '@': resolve(__dirname, 'src'),
     },
   },
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: ['./src/renderer/test-setup.ts'],
+    setupFiles: ['./src/test-setup.ts'],
     css: {
       modules: {
         classNameStrategy: 'non-scoped',

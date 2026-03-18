@@ -117,7 +117,7 @@ const PropertyForm: React.FC<PropertyFormProps> = ({
       </div>
 
       <div className={styles.formGrid}>
-        {/* Column 1: 기본 정보 */}
+        {/* 왼쪽 컬럼: 기본정보 + 거래정보 */}
         <div className={styles.column}>
           <BasicInfoSection
             formData={formData}
@@ -126,26 +126,22 @@ const PropertyForm: React.FC<PropertyFormProps> = ({
             updateField={updateField}
             updateNestedField={updateNestedField}
           />
-        </div>
-
-        {/* Column 2: 거래 + 상세 */}
-        <div className={styles.column}>
           <TransactionSection
             formData={formData}
             errors={errors}
             updateField={updateField}
             updateNestedField={updateNestedField}
           />
+        </div>
+
+        {/* 오른쪽 컬럼: 상세정보 + 건물정보 + 옵션/시설 */}
+        <div className={styles.column}>
           <DetailInfoSection
             formData={formData}
             errors={errors}
             updateField={updateField}
             updateNestedField={updateNestedField}
           />
-        </div>
-
-        {/* Column 3: 건물 + 옵션/시설 */}
-        <div className={styles.column}>
           <BuildingInfoSection
             formData={formData}
             errors={errors}
