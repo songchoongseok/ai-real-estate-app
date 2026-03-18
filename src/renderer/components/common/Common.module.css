@@ -1,0 +1,151 @@
+.fieldRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.label {
+  min-width: 70px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4a5568;
+  padding-top: 7px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.inputWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #fff;
+  outline: none;
+  box-sizing: border-box;
+  color: #2d3748;
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.input:read-only {
+  background: #f7fafc;
+  color: #718096;
+}
+
+.inputError {
+  border-color: #e53e3e;
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+.errorText {
+  font-size: 11px;
+  color: #e53e3e;
+}
+
+.suffix {
+  font-size: 12px;
+  color: #718096;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+/* Area input */
+.areaInputGroup {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.areaField {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  min-width: 80px;
+}
+
+.areaField .input {
+  width: 100%;
+}
+
+/* Checkbox group */
+.checkboxGroup {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  padding-top: 3px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #4a5568;
+  cursor: pointer;
+}
+
+.checkboxLabel input[type='checkbox'] {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  accent-color: #3182ce;
+}
+
+/* Tab selector */
+.tabGroup {
+  display: flex;
+  gap: 0;
+  background: #edf2f7;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: #718096;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabButton:hover {
+  color: #2d3748;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.tabActive {
+  background: #ffffff;
+  color: #2d3748;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.tabActive:hover {
+  background: #ffffff;
+}
