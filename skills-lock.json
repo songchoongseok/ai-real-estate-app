@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "project-manager": {
+      "source": "404kidwiz/claude-supercode-skills",
+      "sourceType": "github",
+      "computedHash": "836203cc09374f9fec7a72c52d877c8d1c7df79580ce965921c7ec07a239c846"
+    }
+  }
+}
